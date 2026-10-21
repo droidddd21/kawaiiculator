@@ -1,30 +1,30 @@
-# Кальку-чан ✦
+# Kawaiiculator
 
-Небольшой уютный калькулятор для Windows на Electron, React, Tailwind и shadcn/ui.
+A cute, local desktop calculator for Windows, built with Electron, React, Tailwind CSS, and shadcn/ui.
 
-## Запуск
+![Kawaiiculator in the Sakura theme](public/previews/macos-sakura.png)
 
-В среде с установленными Node.js и pnpm:
+![Kawaiiculator palette picker](public/previews/macos-palettes.png)
+
+## Features
+
+- Core calculator operations, percentages, sign swap, and keyboard controls.
+- Three switchable palettes: Sakura, Lilac, and Mint.
+- A saved calculation history of up to 30 entries.
+- Desktop window controls, including drag, minimize, maximize, and close.
+
+## Run locally
 
 ```powershell
 pnpm install
 pnpm desktop
 ```
 
-`pnpm desktop` поднимает Vite и открывает отдельное desktop-окно Electron.
-
-## Сборка portable `.exe`
+## Build a portable Windows executable
 
 ```powershell
 pnpm package
 ```
 
-Артефакт появится в папке `release/`.
-
-## Возможности
-
-- базовые операции, проценты, смена знака и очистка;
-- управление с клавиатуры (`Enter`, `Esc`, `Backspace`, цифры и операторы);
-- тёплая кремово-персиковая тема с мягкими тенями;
-- шадcn/ui: `Card`, `Button`, `Badge`.
+The generated `.exe` is saved in `release/`.
 
