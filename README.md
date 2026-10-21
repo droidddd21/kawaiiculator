@@ -2,9 +2,9 @@
 
 A cute, local desktop calculator for Windows, built with Electron, React, Tailwind CSS, and shadcn/ui.
 
-![Kawaiiculator in the Sakura theme](public/previews/macos-sakura.png)
+![Kawaiiculator in the Sakura theme](https://raw.githubusercontent.com/droidddd21/kawaiiculator/main/public/previews/macos-sakura.svg)
 
-![Kawaiiculator palette picker](public/previews/macos-palettes.png)
+![Kawaiiculator palette picker](https://raw.githubusercontent.com/droidddd21/kawaiiculator/main/public/previews/macos-palettes.svg)
 
 ## Features
 
@@ -27,4 +27,3 @@ pnpm package
 ```
 
 The generated `.exe` is saved in `release/`.
-
