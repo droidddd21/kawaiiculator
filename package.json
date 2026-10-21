@@ -1,5 +1,5 @@
 {
-  "name": "cozy-calculator",
+  "name": "kawaiiculator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -40,7 +40,7 @@
   },
   "build": {
     "appId": "com.kawaiiculator.app",
-    "productName": "Kawaiiculator",
+    "productName": "Calculator",
     "directories": { "output": "release" },
     "files": ["dist/**/*", "electron/**/*", "package.json"],
     "win": { "target": "portable" }
