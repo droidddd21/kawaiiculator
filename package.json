@@ -9,7 +9,7 @@
     "electron": "electron electron/main.cjs",
     "desktop": "concurrently -k \"pnpm dev -- --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && pnpm electron\"",
     "build": "tsc -b && vite build",
-    "package": "pnpm build && electron-builder --win portable",
+    "package": "pnpm build && electron-builder --win nsis",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -41,10 +41,18 @@
   "build": {
     "appId": "com.kawaiiculator.app",
     "productName": "Kawaiiculator",
+    "electronVersion": "44.9.0",
     "icon": "build/kawaiiculator.ico",
     "directories": { "output": "release" },
     "files": ["dist/**/*", "electron/**/*", "build/**/*", "package.json"],
-    "win": { "target": "portable" }
+    "win": { "target": "nsis" },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Kawaiiculator-Setup-${version}.exe",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
   }
 }
 
