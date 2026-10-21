@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require("electron")
 const path = require("node:path")
 const isDev = !app.isPackaged
 function createWindow() {
-  const window = new BrowserWindow({ width: 440, height: 700, minWidth: 380, minHeight: 620, title: "Kawaiiculator", backgroundColor: "#fbf7ef", autoHideMenuBar: true, frame: false, webPreferences: { preload: path.join(__dirname, "preload.cjs"), contextIsolation: true, nodeIntegration: false } })
+  const window = new BrowserWindow({ width: 440, height: 700, minWidth: 380, minHeight: 620, title: "Kawaiiculator", icon: path.join(__dirname, "../build/kawaiiculator.ico"), backgroundColor: "#fbf7ef", autoHideMenuBar: true, frame: false, webPreferences: { preload: path.join(__dirname, "preload.cjs"), contextIsolation: true, nodeIntegration: false } })
   if (isDev) window.loadURL("http://127.0.0.1:5173")
   else window.loadFile(path.join(__dirname, "../dist/index.html"))
 }

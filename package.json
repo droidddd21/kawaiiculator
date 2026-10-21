@@ -41,8 +41,9 @@
   "build": {
     "appId": "com.kawaiiculator.app",
     "productName": "Kawaiiculator",
+    "icon": "build/kawaiiculator.ico",
     "directories": { "output": "release" },
-    "files": ["dist/**/*", "electron/**/*", "package.json"],
+    "files": ["dist/**/*", "electron/**/*", "build/**/*", "package.json"],
     "win": { "target": "portable" }
   }
 }
